@@ -1,20 +1,258 @@
 aid: credentially
 name: Credentially
-description: Credentially is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Credentially is a UK-founded, healthcare-only onboarding and compliance automation platform used by
+  NHS trusts, private providers, urgent care and clinical staffing agencies in the UK and US. It brings
+  pre-employment checks, DBS and right-to-work validation, primary source verification, credentialing
+  and continuous compliance monitoring onto one platform, cutting the platform-managed steps of onboarding
+  clinical staff from an industry average of around 60 days to as little as 5. The Credentially Public API
+  (OpenAPI 3.1) exposes profiles, placements, documents with OCR auto-fill, DBS checks, references,
+  right-to-work status and compliance packages, with a companion Webhook API for state-change events.
 url: https://raw.githubusercontent.com/api-evangelist/credentially/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/67f6367b305814423f88598b/6839b1c0c6313ba54fe9856d_5e3042f6ca409a0e92b09c9e_1231.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - techstars
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enriched-from-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
+- Healthcare
+- Credentialing
+- Compliance
+- Onboarding
+- Workforce
+- Identity Verification
+- Background Checks
+- NHS
 - Company
-apis: []
+apis:
+- aid: credentially:credentially-compliance-packages-api
+  name: Credentially Compliance-packages API
+  description: Profile's compliance packages management proxy endpoints
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Compliance-packages
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-compliance-packages-api-openapi.yml
+- aid: credentially:credentially-dbs-api
+  name: Credentially DBS API
+  description: DBS check lookup and refresh endpoints
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - DBS
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-dbs-api-openapi.yml
+- aid: credentially:credentially-dictionary-api
+  name: Credentially Dictionary API
+  description: Dictionary lookup endpoints for custom profile field values
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Dictionary
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-dictionary-api-openapi.yml
+- aid: credentially:credentially-document-auto-fill-api
+  name: Credentially Document Auto-fill API
+  description: Automated document data extraction and validation endpoints
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Document Auto-fill
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-document-auto-fill-api-openapi.yml
+- aid: credentially:credentially-documents-api
+  name: Credentially Documents API
+  description: Document management proxy endpoints
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Documents
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-documents-api-openapi.yml
+- aid: credentially:credentially-employee-placements-api
+  name: Credentially Employee Placements API
+  description: Placement data scoped to a specific employee.
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Employee Placements
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-employee-placements-api-openapi.yml
+- aid: credentially:credentially-jurisdictions-api
+  name: Credentially Jurisdictions API
+  description: Org-scoped jurisdictions a placement can reference (read-only).
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Jurisdictions
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-jurisdictions-api-openapi.yml
+- aid: credentially:credentially-location-types-api
+  name: Credentially Location Types API
+  description: Org-scoped classifications for placement locations (read-only).
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Location Types
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-location-types-api-openapi.yml
+- aid: credentially:credentially-locations-api
+  name: Credentially Locations API
+  description: Facilities / sites where placements occur. Each belongs to one jurisdiction.
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Locations
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-locations-api-openapi.yml
+- aid: credentially:credentially-meta-api
+  name: Credentially Meta API
+  description: API for fetching metadata
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Meta
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-meta-api-openapi.yml
+- aid: credentially:credentially-organisation-groups-api
+  name: Credentially Organisation Groups API
+  description: Organisation group member management endpoints
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Organisation Groups
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-organisation-groups-api-openapi.yml
+- aid: credentially:credentially-placement-notes-api
+  name: Credentially Placement Notes API
+  description: Notes attached to a placement — free-text annotations.
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Placement Notes
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-placement-notes-api-openapi.yml
+- aid: credentially:credentially-placement-roles-api
+  name: Credentially Placement Roles API
+  description: Org-scoped roles a placement can reference (e.g. Band 6 RN).
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Placement Roles
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-placement-roles-api-openapi.yml
+- aid: credentially:credentially-placements-api
+  name: Credentially Placements API
+  description: >-
+    Placement lifecycle proxy endpoints — assignment of an employee to a location + role within the organisation.
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Placements
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-placements-api-openapi.yml
+- aid: credentially:credentially-profile-groups-api
+  name: Credentially Profile Groups API
+  description: Organisation groups proxy endpoints
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Profile Groups
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-profile-groups-api-openapi.yml
+- aid: credentially:credentially-profiles-api
+  name: Credentially Profiles API
+  description: Profile management proxy endpoints
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Profiles
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-profiles-api-openapi.yml
+- aid: credentially:credentially-references-api
+  name: Credentially References API
+  description: Profile reference status lookup endpoints
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - References
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-references-api-openapi.yml
+- aid: credentially:credentially-right-to-work-api
+  name: Credentially Right to Work API
+  description: Right to work status lookup endpoints
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Right to Work
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-right-to-work-api-openapi.yml
+- aid: credentially:credentially-stage-placements-api
+  name: Credentially Stage Placements API
+  description: Placements scoped to a Kanban stage — board column reads + bulk-move.
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Stage Placements
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-stage-placements-api-openapi.yml
+- aid: credentially:credentially-stages-api
+  name: Credentially Stages API
+  description: Kanban placement stages — per-org column definitions for the placements board.
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Stages
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-stages-api-openapi.yml
+- aid: credentially:credentially-subscriptions-api
+  name: Credentially Subscriptions API
+  description: API for managing webhook callback subscriptions
+  humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
+  baseURL: https://app.credentially.io/gateway
+  tags:
+  - Subscriptions
+  properties:
+  - type: OpenAPI
+    url: openapi/credentially-subscriptions-api-openapi.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +261,66 @@ maintainers:
 common:
 - type: Website
   url: https://credentially.io/
+- type: DeveloperPortal
+  url: https://credentially.readme.io/reference/getting-started-with-your-api
+- type: Documentation
+  url: https://credentially.readme.io/
+- type: APIReference
+  url: https://credentially.readme.io/reference/getting-started-with-your-api
+- type: GettingStarted
+  url: https://credentially.readme.io/reference/getting-started-with-your-api
+- type: Support
+  url: https://credentially.my.site.com/s/KnowledgeHub
+- type: Blog
+  url: https://www.credentially.io/blog
+- type: GitHubOrganization
+  url: https://github.com/Credentially
+- type: Pricing
+  url: https://www.credentially.io/pricing
+- type: SignUp
+  url: https://www.credentially.io/book-a-demo
+- type: Login
+  url: https://app.credentially.io/login
+- type: TermsOfService
+  url: https://www.credentially.io/terms-policies/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.credentially.io/terms-policies/privacy-policy
+- type: StatusPage
+  url: https://status.credentially.io/
+- type: Compliance
+  url: https://www.credentially.io/security
+- type: Integrations
+  url: https://www.credentially.io/integrations
+- type: Authentication
+  url: authentication/credentially-authentication.yml
+- type: DomainSecurity
+  url: security/credentially-domain-security.yml
+- type: TrustCenter
+  url: security/credentially-trust-center.yml
+- type: AgenticAccess
+  url: agentic-access/credentially-agentic-access.yml
+- type: MCPServer
+  url: mcp/credentially-mcp.yml
+- type: LLMsTxt
+  url: llms/credentially-llms.txt
+- type: Conformance
+  url: conformance/credentially-conformance.yml
+- type: ErrorCatalog
+  url: errors/credentially-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/credentially-lifecycle.yml
+- type: Sandbox
+  url: sandbox/credentially-sandbox.yml
+- type: Conventions
+  url: conventions/credentially-conventions.yml
+- type: DataModel
+  url: data-model/credentially-data-model.yml
+- type: Webhooks
+  url: asyncapi/credentially-webhooks.yml
+- type: AgentSkill
+  url: skills/_index.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

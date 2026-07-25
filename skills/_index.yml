@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: generated
+source: openapi/credentially-gateway-openapi-original.json, openapi/credentially-webhook-openapi-original.json
+skills:
+- file: credentially-onboard-clinician.md
+  name: Onboard a clinician profile
+  api: openapi/credentially-gateway-openapi-original.json
+  operations: [createProfile, updateProfileFields, getProfileByEmail, getProfileMetadata, loadProfiles]
+- file: credentially-document-verification.md
+  name: Upload and verify a profile document
+  api: openapi/credentially-gateway-openapi-original.json
+  operations: [getDocumentTypes, uploadDocument, autoFillProcess, getDocuments, approve_1, reject, downloadFile]
+- file: credentially-compliance-monitoring.md
+  name: Assign compliance packages and read check status
+  api: openapi/credentially-gateway-openapi-original.json
+  operations: [getOrganisationCompliancePackages, getProfileCompliancePackages, assign, getProfileDbsChecks, updateProfileDbsCheck, getProfileRightToWork, getProfileReferences]
+- file: credentially-webhooks-subscription.md
+  name: Subscribe to Credentially webhooks
+  api: openapi/credentially-webhook-openapi-original.json
+  operations: [getAvailableEventTypes, createSubscription, getSubscriptions, deleteSubscription]
