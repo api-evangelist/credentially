@@ -249,6 +249,8 @@ apis:
   humanURL: https://credentially.readme.io/reference/getting-started-with-your-api
   baseURL: https://app.credentially.io/gateway
   tags:
+  - Subscription
+  tags_raw:
   - Subscriptions
   properties:
   - type: OpenAPI
