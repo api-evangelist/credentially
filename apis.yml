@@ -23,15 +23,17 @@ deliveryModel:
   method: derived
 accessModel:
   pricing: unknown
-  onboarding: self-serve
+  onboarding: unknown
   trial: false
   try_now: false
   public: false
-  label: Self-serve signup
-  confidence: medium
+  label: Unknown
+  confidence: low
   source:
   - authentication
-  generated: '2026-07-22'
+  - security
+  - sandbox
+  generated: '2026-09-03'
   method: derived
 image: https://cdn.prod.website-files.com/67f6367b305814423f88598b/6839b1c0c6313ba54fe9856d_5e3042f6ca409a0e92b09c9e_1231.png
 x-type: company
@@ -318,8 +320,9 @@ common:
   url: security/credentially-trust-center.yml
 - type: AgenticAccess
   url: agentic-access/credentially-agentic-access.yml
-- type: MCPServer
+- type: X-MCPServerCandidate
   url: mcp/credentially-mcp.yml
+  note: 'Renamed from MCPServer 2026-09-03 (roadmap#247): the manifest self-describes as status: candidate — a tool list derived from the published API contracts, not an existing server. The scorer already read the manifest and reported mcp_server correctly; the MCPServer type was crediting the artifact-type surfaces with a server that does not exist.'
 - type: LLMsTxt
   url: llms/credentially-llms.txt
 - type: Conformance
