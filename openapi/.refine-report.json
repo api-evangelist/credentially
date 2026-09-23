@@ -1,27 +1,8 @@
 {
   "provider": "credentially",
   "sources": [
-    "credentially-compliance-packages-api-openapi.yml",
-    "credentially-dbs-api-openapi.yml",
-    "credentially-dictionary-api-openapi.yml",
-    "credentially-document-auto-fill-api-openapi.yml",
-    "credentially-documents-api-openapi.yml",
-    "credentially-employee-placements-api-openapi.yml",
-    "credentially-jurisdictions-api-openapi.yml",
-    "credentially-location-types-api-openapi.yml",
-    "credentially-locations-api-openapi.yml",
-    "credentially-meta-api-openapi.yml",
-    "credentially-organisation-groups-api-openapi.yml",
-    "credentially-placement-notes-api-openapi.yml",
-    "credentially-placement-roles-api-openapi.yml",
-    "credentially-placements-api-openapi.yml",
-    "credentially-profile-groups-api-openapi.yml",
-    "credentially-profiles-api-openapi.yml",
-    "credentially-references-api-openapi.yml",
-    "credentially-right-to-work-api-openapi.yml",
-    "credentially-stage-placements-api-openapi.yml",
-    "credentially-stages-api-openapi.yml",
-    "credentially-subscriptions-api-openapi.yml"
+    "_original/credentially-gateway-openapi-original.json",
+    "_original/credentially-webhook-openapi-original.json"
   ],
   "outputs": [
     "credentially-compliance-packages-api-openapi.yml",
@@ -33,7 +14,6 @@
     "credentially-jurisdictions-api-openapi.yml",
     "credentially-location-types-api-openapi.yml",
     "credentially-locations-api-openapi.yml",
-    "credentially-meta-api-openapi.yml",
     "credentially-organisation-groups-api-openapi.yml",
     "credentially-placement-notes-api-openapi.yml",
     "credentially-placement-roles-api-openapi.yml",
@@ -44,11 +24,39 @@
     "credentially-right-to-work-api-openapi.yml",
     "credentially-stage-placements-api-openapi.yml",
     "credentially-stages-api-openapi.yml",
+    "credentially-meta-api-openapi.yml",
     "credentially-subscriptions-api-openapi.yml"
   ],
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (2 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "credentially-gateway-openapi-original.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "credentially-webhook-openapi-original.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "credentially-compliance-packages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-dbs-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-dictionary-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-document-auto-fill-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-documents-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-employee-placements-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-jurisdictions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-location-types-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-locations-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-meta-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-organisation-groups-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-placement-notes-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-placement-roles-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-placements-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-profile-groups-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-profiles-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-references-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-right-to-work-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-stage-placements-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-stages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "credentially-subscriptions-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
