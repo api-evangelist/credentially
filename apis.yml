@@ -282,6 +282,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: PostmanWorkspace
+  url: https://www.postman.com/kinlaneapi/credentially/overview
 - type: Plans
   url: plans/credentially-plans-pricing.yml
 - type: CapabilityMap
