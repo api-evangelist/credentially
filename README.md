@@ -64,6 +64,176 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Credentially is a company surfaced as a portfolio company of techstars and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Credentially is a UK-founded, healthcare-only onboarding and compliance automation platform used by NHS trusts, private providers, urgent care and clinical staffing agencies in the UK and US. It brings pre-employment checks, DBS and right-to-work validation, primary source verification, credentialing and continuous compliance monitoring onto one platform, cutting the platform-managed steps of onboarding clinical staff from an industry average of around 60 days to as little as 5. The Credentially Public API (OpenAPI 3.1) exposes profiles, placements, documents with OCR auto-fill, DBS checks, references, right-to-work status and compliance packages, with a companion Webhook API for state-change events.
 
-Backed by: techstars — https://credentially.io/
+**Areas:** Healthcare · Credentialing · Compliance · Onboarding · Workforce · Identity Verification · Background Checks · NHS · Company
+
+## Credentially on APIs.io
+
+Everything profiled for Credentially is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/credentially/](https://apis.io/providers/credentially/)** — or go straight to one of the APIs or properties below.
+
+### APIs (21)
+
+- [Credentially Compliance-packages API](https://apis.io/apis/credentially/credentially-compliance-packages-api/) — Profile's compliance packages management proxy endpoints
+- [Credentially DBS API](https://apis.io/apis/credentially/credentially-dbs-api/) — DBS check lookup and refresh endpoints
+- [Credentially Dictionary API](https://apis.io/apis/credentially/credentially-dictionary-api/) — Dictionary lookup endpoints for custom profile field values
+- [Credentially Document Auto-fill API](https://apis.io/apis/credentially/credentially-document-auto-fill-api/) — Automated document data extraction and validation endpoints
+- [Credentially Documents API](https://apis.io/apis/credentially/credentially-documents-api/) — Document management proxy endpoints
+- [Credentially Employee Placements API](https://apis.io/apis/credentially/credentially-employee-placements-api/) — Placement data scoped to a specific employee.
+- [Credentially Jurisdictions API](https://apis.io/apis/credentially/credentially-jurisdictions-api/) — Org-scoped jurisdictions a placement can reference (read-only).
+- [Credentially Location Types API](https://apis.io/apis/credentially/credentially-location-types-api/) — Org-scoped classifications for placement locations (read-only).
+- [Credentially Locations API](https://apis.io/apis/credentially/credentially-locations-api/) — Facilities / sites where placements occur. Each belongs to one jurisdiction.
+- [Credentially Meta API](https://apis.io/apis/credentially/credentially-meta-api/) — API for fetching metadata
+- [Credentially Organisation Groups API](https://apis.io/apis/credentially/credentially-organisation-groups-api/) — Organisation group member management endpoints
+- [Credentially Placement Notes API](https://apis.io/apis/credentially/credentially-placement-notes-api/) — Notes attached to a placement — free-text annotations.
+- [Credentially Placement Roles API](https://apis.io/apis/credentially/credentially-placement-roles-api/) — Org-scoped roles a placement can reference (e.g. Band 6 RN).
+- [Credentially Placements API](https://apis.io/apis/credentially/credentially-placements-api/) — Placement lifecycle proxy endpoints — assignment of an employee to a location + role within the organisation.
+- [Credentially Profile Groups API](https://apis.io/apis/credentially/credentially-profile-groups-api/) — Organisation groups proxy endpoints
+- [Credentially Profiles API](https://apis.io/apis/credentially/credentially-profiles-api/) — Profile management proxy endpoints
+- [Credentially References API](https://apis.io/apis/credentially/credentially-references-api/) — Profile reference status lookup endpoints
+- [Credentially Right to Work API](https://apis.io/apis/credentially/credentially-right-to-work-api/) — Right to work status lookup endpoints
+- [Credentially Stage Placements API](https://apis.io/apis/credentially/credentially-stage-placements-api/) — Placements scoped to a Kanban stage — board column reads + bulk-move.
+- [Credentially Stages API](https://apis.io/apis/credentially/credentially-stages-api/) — Kanban placement stages — per-org column definitions for the placements board.
+- [Credentially Subscriptions API](https://apis.io/apis/credentially/credentially-subscriptions-api/) — API for managing webhook callback subscriptions
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Credentially Webhooks](https://apis.io/asyncapis/credentially/credentially-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [credentially](https://apis.io/servers/credentially/credentially/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Credentially Agentic Access](https://apis.io/agentic-access/credentially/credentially-agentic-access/)
+
+#### Collections (21)
+
+Postman and Open Collection request collections.
+
+- [Credentially Public Compliance-packages API](https://apis.io/collections/credentially/open-credentially-compliance-packages-api/)
+- [Credentially Public Compliance-packages DBS API](https://apis.io/collections/credentially/open-credentially-dbs-api/)
+- [Credentially Public Compliance-packages Dictionary API](https://apis.io/collections/credentially/open-credentially-dictionary-api/)
+- [Credentially Public Compliance-packages Document Auto-fill API](https://apis.io/collections/credentially/open-credentially-document-auto-fill-api/)
+- [Credentially Public Compliance-packages Documents API](https://apis.io/collections/credentially/open-credentially-documents-api/)
+- [Credentially Public Compliance-packages Employee Placements API](https://apis.io/collections/credentially/open-credentially-employee-placements-api/)
+- [Credentially Public Compliance-packages Jurisdictions API](https://apis.io/collections/credentially/open-credentially-jurisdictions-api/)
+- [Credentially Public Compliance-packages Location Types API](https://apis.io/collections/credentially/open-credentially-location-types-api/)
+- [Credentially Public Compliance-packages Locations API](https://apis.io/collections/credentially/open-credentially-locations-api/)
+- [Credentially Public Compliance-packages Meta API](https://apis.io/collections/credentially/open-credentially-meta-api/)
+- [Credentially Public Compliance-packages Organisation Groups API](https://apis.io/collections/credentially/open-credentially-organisation-groups-api/)
+- [Credentially Public Compliance-packages Placement Notes API](https://apis.io/collections/credentially/open-credentially-placement-notes-api/)
+- [Credentially Public Compliance-packages Placement Roles API](https://apis.io/collections/credentially/open-credentially-placement-roles-api/)
+- [Credentially Public Compliance-packages Placements API](https://apis.io/collections/credentially/open-credentially-placements-api/)
+- [Credentially Public Compliance-packages Profile Groups API](https://apis.io/collections/credentially/open-credentially-profile-groups-api/)
+- [Credentially Public Compliance-packages Profiles API](https://apis.io/collections/credentially/open-credentially-profiles-api/)
+- [Credentially Public Compliance-packages References API](https://apis.io/collections/credentially/open-credentially-references-api/)
+- [Credentially Public Compliance-packages Right to Work API](https://apis.io/collections/credentially/open-credentially-right-to-work-api/)
+- [Credentially Public Compliance-packages Stage Placements API](https://apis.io/collections/credentially/open-credentially-stage-placements-api/)
+- [Credentially Public Compliance-packages Stages API](https://apis.io/collections/credentially/open-credentially-stages-api/)
+- [Credentially Public Compliance-packages Subscriptions API](https://apis.io/collections/credentially/open-credentially-subscriptions-api/)
+
+#### Overlays (2)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Credentially Gateway Overlay](https://apis.io/overlays/credentially/credentially-gateway-overlay/)
+- [Credentially Webhook Overlay](https://apis.io/overlays/credentially/credentially-webhook-overlay/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Credentially Authentication](https://apis.io/security/credentially/credentially-authentication/)
+- [Credentially Domain Security](https://apis.io/security/credentially/credentially-domain-security/)
+- [Credentially Trust Center](https://apis.io/security/credentially/credentially-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Credentially Plans Pricing](https://apis.io/plans/credentially/credentially-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://credentially.io/)
+- [Documentation](https://credentially.readme.io/)
+- [Getting started](https://credentially.readme.io/reference/getting-started-with-your-api)
+- [API reference](https://credentially.readme.io/reference/getting-started-with-your-api)
+- [Pricing](https://www.credentially.io/pricing)
+- [Sign up](https://www.credentially.io/book-a-demo)
+- [Support](https://credentially.my.site.com/s/KnowledgeHub)
+- [Blog](https://www.credentially.io/blog)
+- [Compliance](https://www.credentially.io/security)
+- [Terms of service](https://www.credentially.io/terms-policies/terms-of-use)
+- [Privacy policy](https://www.credentially.io/terms-policies/privacy-policy)
+- [GitHub](https://github.com/Credentially)
+- [Status](https://status.credentially.io/)
+
+## API Evangelist rating
+
+**Kin Score 52.9** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 62.1 |
+| Contract governance | 18.2 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 48.2 |
+| Access clarity | 60.5 |
+
+**Agent readiness 35.1** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | documented (partial credit) |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | verified |
+| Event Surface Described | yes |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | — |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 27.3** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/credentially/](https://apis.io/providers/credentially/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Credentially: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/credentially/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
